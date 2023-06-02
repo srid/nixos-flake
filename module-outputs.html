@@ -5,15 +5,15 @@
   <meta charset='UTF-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <title>
-    Getting Started – nixos-flake
+    Module outputs – nixos-flake
   </title>
   
     
-      <meta property='og:description' content='Pick your desired operating system and follow the below instructions.' />
+      <meta property='og:description' content='Importing the nixos-flake flake-parts module will autowire the following flake outputs in your flake:' />
       <meta property='og:site_name' content='nixos-flake' />
       <meta property='og:image' content />
       <meta property='og:type' content='website' />
-      <meta property='og:title' content='Getting Started' />
+      <meta property='og:title' content='Module outputs' />
     
     
       <base href='/' />
@@ -262,6 +262,15 @@
               </svg>
             </li>
           
+            <li class='inline-flex items-center'>
+              <a class='px-1 font-bold' href='ref'>
+                Reference
+              </a>
+              <svg fill='currentColor' viewBox='0 0 20 20' class='w-auto h-5 text-gray-400'>
+                <path fill-rule='evenodd' d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z' clip-rule='evenodd'></path>
+              </svg>
+            </li>
+          
         
       </ul>
     </div>
@@ -331,7 +340,11 @@
             
               <!-- Variable bindings for this tree-->
   
-  
+    
+      
+    
+    
+
 
 
   
@@ -344,12 +357,12 @@
     
     
       <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
-        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
         </path>
       </svg>
-      
+    
   
-    <a class='font-bold text-red-600 hover:underline truncate' title='Getting Started' href='start'>
+    <a class='hover:underline truncate' title='Getting Started' href='start'>
       Getting Started
     </a>
     
@@ -402,11 +415,7 @@
     
       <!-- Variable bindings for this tree-->
   
-    
-      
-    
-    
-
+  
 
 
   
@@ -419,12 +428,12 @@
     
     
       <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
-        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z'>
         </path>
       </svg>
-    
+      
   
-    <a class='hover:underline truncate' title='Module outputs' href='module-outputs'>
+    <a class='font-bold text-red-600 hover:underline truncate' title='Module outputs' href='module-outputs'>
       Module outputs
     </a>
     
@@ -529,89 +538,41 @@
           <main class='px-4 py-4'>
             <h1 class='flex items-end justify-center mb-4 p-3 bg-red-100 text-5xl font-extrabold text-black rounded'>
   <a class='z-40 tracking-tighter '>
-    Getting Started
+    Module outputs
   </a>
 </h1>
             <article class='overflow-auto'>
   <!-- What goes in this file will appear on top of note body-->
   
     <p class='mb-3'>
-      Pick your desired operating system and follow the below instructions.
+      Importing the <code class='py-0.5 px-0.5 bg-gray-100'>nixos-flake</code> flake-parts module will autowire the following flake outputs in your flake:
     </p>
-  <h2 id='nixos' class='mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>NixOS</h2>
-    <ul class='my-3 ml-6 space-y-1 list-decimal list-inside'>
-      
-        <li>
-          <a href='https://nixos.org/download.html' class='text-red-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Install NixOS</a>
-        </li>
-      
-        <li>
-          <a href='https://nixos.wiki/wiki/Flakes#Enable_flakes' class='text-red-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Enable Flakes</a>
-        </li>
-      
-        <li>
-          Flakify your <code class='py-0.5 px-0.5 bg-gray-100'>/etc/nixos/configuration.nix</code>: <a href='https://nixos.wiki/wiki/Flakes#Using_nix_flakes_with_NixOS' class='text-red-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://nixos.wiki/wiki/Flakes#Using_nix_flakes_with_NixOS</a>
-        </li>
-      
-        <li>
-          Convert your <code class='py-0.5 px-0.5 bg-gray-100'>flake.nix</code> to using <code class='py-0.5 px-0.5 bg-gray-100'>nixos-flake</code> using the <a href='templates' class='text-red-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>NixOS only template</a> as reference.
-        </li>
-      
-    </ul>
-  <h2 id='non-nixos-linux' class='mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>non-NixOS Linux</h2>
-    <ul class='my-3 ml-6 space-y-1 list-decimal list-inside'>
-      
-        <li>
-          <a href='https://haskell.flake.page/nix' class='text-red-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Install Nix</a>
-        </li>
-      
-        <li>
-          Use the <a href='templates' class='text-red-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>$HOME only template</a>
-        </li>
-      
-    </ul>
-  <h2 id='macos' class='mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>macOS</h2>
-    <ul class='my-3 ml-6 space-y-1 list-decimal list-inside'>
-      
-        <li>
-          <a href='https://haskell.flake.page/nix' class='text-red-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Install Nix</a>
-        </li>
-      
-        <li>
-          <a href='https://github.com/LnL7/nix-darwin' class='text-red-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Install nix-darwin</a>
-        </li>
-      
-        <li>
-          Use the <a href='templates' class='text-red-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>macOS only template</a>
-    <sup class='px-0.5'>
-      <a class='text-red-600 hover:underline' href='start#fn1'>
-        1
-      </a>
-    </sup>
+  <table class='mb-3'><thead><tr class='border-b-2 border-t-2 border-gray-300'><th class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>Name</th><th class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>Description</th></tr></thead><tbody><tr class='border-b-2 border-t-2 border-gray-300'><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'><code class='py-0.5 px-0.5 bg-gray-100'>nixos-flake.lib</code></td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>Functions <code class='py-0.5 px-0.5 bg-gray-100'>mkLinuxSystem</code>, <code class='py-0.5 px-0.5 bg-gray-100'>mkDarwinSystem</code> and <code class='py-0.5 px-0.5 bg-gray-100'>mkHomeConfiguration</code></td></tr><tr class='border-b-2 border-t-2 border-gray-300'><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'><code class='py-0.5 px-0.5 bg-gray-100'>nixosModules.home-manager</code></td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>Home-manager setup module for NixOS</td></tr><tr class='border-b-2 border-t-2 border-gray-300'><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'><code class='py-0.5 px-0.5 bg-gray-100'>darwinModules.home-manager</code></td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>Home-manager setup module for Darwin</td></tr><tr class='border-b-2 border-t-2 border-gray-300'><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'><code class='py-0.5 px-0.5 bg-gray-100'>packages.update</code></td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>Flake app to update key flake inputs</td></tr><tr class='border-b-2 border-t-2 border-gray-300'><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'><code class='py-0.5 px-0.5 bg-gray-100'>packages.activate</code></td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>Flake app to build & activate the system</td></tr><tr class='border-b-2 border-t-2 border-gray-300'><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'><code class='py-0.5 px-0.5 bg-gray-100'>packages.activate-home</code></td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>Flake app to build & activate the <code class='py-0.5 px-0.5 bg-gray-100'>homeConfigurations</code> for current user</td></tr></tbody></table>
+    <p class='mb-3'>
+      In addition, all of your NixOS/nix-darwin/home-manager modules implicitly receive the following <code class='py-0.5 px-0.5 bg-gray-100'>specialArgs</code>:
+    </p>
   
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <code class='py-0.5 px-0.5 bg-gray-100'>flake@{self, inputs, config}</code> (<code class='py-0.5 px-0.5 bg-gray-100'>config</code> is from flake-parts’)
+        </li>
+      
+        <li>
+          <code class='py-0.5 px-0.5 bg-gray-100'>rosettaPkgs</code> (if on darwin)
         </li>
       
     </ul>
   
-    <div title='Footnotes' class='pt-2 mt-8 space-y-1 text-gray-500 transform scale-x-90 border-t-2'>
-      <header class='font-semibold'>Footnotes</header>
-      
-        <div id='fn1'>
-          <header class='italic'>
-            1.
-          </header>
-          <div class='inline-block mb-2 ml-4'>
-            Alternative, use the “Both platforms” template if you are sharing your configuration with the other platform as well.
-          </div>
-        </div>
-      
-    </div>
+    <p class='mb-3'>
+      <strong>NOTE</strong>: The module API is open to change. <a href='https://github.com/srid/nixos-flake/issues/new' class='text-red-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>All feedback welcome</a>.
+    </p>
   
 
   <div class='flex items-center justify-center mt-2'>
   
     
-      <a class='text-gray-300 hover:text-red-600 text-sm' title='Edit this page on GitHub' href='https://github.com/srid/nixos-flake/edit/master/doc/start.md'>
+      <a class='text-gray-300 hover:text-red-600 text-sm' title='Edit this page on GitHub' href='https://github.com/srid/nixos-flake/edit/master/doc/ref/module-outputs.md'>
         <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
           <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
         </svg>
@@ -623,28 +584,6 @@
             <div class='flex flex-col lg:flex-row lg:space-x-2'>
               
               
-  <div class='flex-1 p-4 mt-8 bg-gray-100 rounded'>
-    <header class='mb-2 text-xl font-semibold text-gray-500'>Links to this page</header>
-    <ul class='space-y-1'>
-      
-        <li>
-          <a class='text-red-600 mavenLinkBold hover:bg-red-50' href=''>
-            nixos-flake
-          </a>
-          
-            <div class='mb-4 overflow-auto text-sm text-gray-500'>
-  
-    <div class='pl-2 mt-2 border-l-2 border-red-200 hover:border-red-500'>
-      <div><p>Start from <a href='start' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Getting Started</a>.</p></div>
-    </div>
-  
-</div>
-          
-        </li>
-      
-    </ul>
-  </div>
-
             </div>
             
   <section class='flex flex-wrap items-end justify-center my-4 space-x-2 space-y-2 font-mono text-sm'>
